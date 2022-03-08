@@ -4,6 +4,12 @@ public class Banco {
 	
 	private String nome;
 	private List<Conta> contas;
+	
+	
+	public Banco(String nome) {
+		super();
+		this.nome = nome;
+	}
 
 	public String getNome() {
 		return nome;
@@ -20,5 +26,12 @@ public class Banco {
 	public void setContas(List<Conta> contas) {
 		this.contas = contas;
 	}
+
+	@Override
+	public String toString() {
+		return "Banco [nome=" + nome + ", contas=" + contas + "]";
+	}
+	
+	
 
 }
